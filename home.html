@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>kofi Honu Gallery.com — Home</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body data-page="home" class="bg-cream min-h-screen text-deepPurple">
+    <header class="bg-gradient-to-r from-deepPurple to-purple-700 text-cream">
+      <nav class="max-w-6xl mx-auto flex items-center justify-between p-4">
+        <div class="flex items-center gap-4">
+          <div class="text-2xl font-bold">kofi Honu Gallery.com</div>
+        </div>
+        <div class="flex items-center gap-4">
+          <a href="home.html" class="nav-link">Home</a>
+          <a href="about.html" class="nav-link">About Us</a>
+          <a href="gallery.html" class="nav-link">Gallery</a>
+          <a href="cart.html" id="cartLink" class="nav-link">Cart(0)</a>
+          <button id="logoutBtn" class="bg-gold text-deepPurple px-3 py-1 rounded">Logout</button>
+        </div>
+      </nav>
+    </header>
+
+    <main class="max-w-6xl mx-auto p-6">
+      <section class="hero relative rounded-[32px] overflow-hidden mb-8 bg-gradient-to-br from-[#8f4fff] via-[#ff98b2] to-[#f6cd5e] text-white shadow-2xl">
+        <div class="absolute -left-16 -top-16 w-56 h-56 rounded-full bg-white/15 blur-3xl"></div>
+        <div class="absolute -right-20 top-10 w-72 h-72 rounded-full bg-[#ffda7d]/25 blur-3xl"></div>
+        <div class="relative p-8 md:p-12">
+          <div class="max-w-3xl space-y-6">
+            <div class="uppercase tracking-[0.35em] text-sm text-white/80 font-semibold">Discover soulful stories through color</div>
+            <h1 class="text-4xl md:text-6xl font-extrabold leading-tight hero-text">Art That Tells A Story</h1>
+            <p class="text-lg md:text-xl max-w-2xl text-white/90">Every painting in our gallery is a hand-crafted moment, thoughtfully designed to bring warmth, culture, and beautiful narrative energy into your space.</p>
+            <div class="flex flex-col sm:flex-row items-start gap-4">
+              <a href="about.html" class="inline-flex items-center justify-center bg-white text-deepPurple rounded-full px-6 py-3 font-semibold shadow-lg hover:scale-[1.02] transition">About Us</a>
+              <a href="gallery.html" class="inline-flex items-center justify-center border border-white/50 text-white rounded-full px-6 py-3 font-semibold hover:bg-white/10 transition">Browse Gallery</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="text-2xl font-bold mb-4">Curated For You</h2>
+        <div id="featuredGrid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6"></div>
+      </section>
+
+      <div class="fixed bottom-6 right-6">
+        <a href="gallery.html" class="inline-flex items-center gap-2 bg-deepPurple text-cream px-4 py-3 rounded-full shadow-lg hover:scale-105 transition">Explore More →</a>
+      </div>
+    </main>
+
+    <footer class="bg-deepPurple text-cream footer-section">
+      <div class="max-w-6xl mx-auto footer-grid">
+        <div>
+          <div class="footer-title">Kofi Honu</div>
+          <p class="footer-text">A curated gallery that brings soulful paintings to life with rich stories, vibrant color and elegant craftsmanship.</p>
+        </div>
+        <div>
+          <div class="footer-title">Contact</div>
+          <a href="mailto:nbanature35@gmail.com" class="footer-contact-item">
+            <span>Email</span>
+            <span>nbanature35@gmail.com</span>
+          </a>
+          <a href="tel:0535026720" class="footer-contact-item">
+            <span>Phone</span>
+            <span>0535026720</span>
+          </a>
+        </div>
+        <div>
+          <div class="footer-title">Follow Us</div>
+          <div class="footer-social">
+            <a href="#" class="footer-social-link">Facebook</a>
+            <a href="#" class="footer-social-link">Instagram</a>
+            <a href="#" class="footer-social-link">YouTube</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">Developed by Prince Honu</div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>The Story Painter — Cart</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body data-page="cart" class="bg-cream min-h-screen text-deepPurple">
+    <header class="bg-gradient-to-r from-deepPurple to-purple-700 text-cream">
+      <nav class="max-w-6xl mx-auto flex items-center justify-between p-4">
+        <div class="flex items-center gap-4">
+          <div class="text-2xl font-bold">kofi Honu Gallery.com</div>
+        </div>
+        <div class="flex items-center gap-4">
+          <a href="home.html" class="nav-link">Home</a>
+          <a href="about.html" class="nav-link">About Us</a>
+          <a href="gallery.html" class="nav-link">Gallery</a>
+          <a href="cart.html" id="cartLink" class="nav-link">Cart(0)</a>
+          <button id="logoutBtn" class="bg-gold text-deepPurple px-3 py-1 rounded">Logout</button>
+        </div>
+      </nav>
+    </header>
+
+    <main class="max-w-6xl mx-auto p-6">
+      <h1 class="text-3xl font-bold mb-6">Your Cart</h1>
+      <div id="cartContainer" class="space-y-6"></div>
+
+      <div id="cartSummary" class="mt-8 bg-white rounded-lg p-6 shadow">
+        <div class="flex justify-between mb-2"><span>Subtotal</span><span id="subtotal">$0</span></div>
+        <div class="flex justify-between font-bold text-lg"><span>Total</span><span id="total">$0</span></div>
+        <div class="mt-4 text-right">
+          <button id="checkoutBtn" class="bg-deepPurple text-cream px-4 py-2 rounded">Checkout</button>
+        </div>
+      </div>
+    </main>
+
+    <footer class="bg-deepPurple text-cream footer-section">
+      <div class="max-w-6xl mx-auto footer-grid">
+        <div>
+          <div class="footer-title">Kofi Honu</div>
+          <p class="footer-text">A curated gallery that brings soulful paintings to life with rich stories, vibrant color and elegant craftsmanship.</p>
+        </div>
+        <div>
+          <div class="footer-title">Contact</div>
+          <a href="mailto:nbanature35@gmail.com" class="footer-contact-item">
+            <span>Email</span>
+            <span>nbanature35@gmail.com</span>
+          </a>
+          <a href="tel:0535026720" class="footer-contact-item">
+            <span>Phone</span>
+            <span>0535026720</span>
+          </a>
+        </div>
+        <div>
+          <div class="footer-title">Follow Us</div>
+          <div class="footer-social">
+            <a href="#" class="footer-social-link">Facebook</a>
+            <a href="#" class="footer-social-link">Instagram</a>
+            <a href="#" class="footer-social-link">YouTube</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">Developed by Prince Honu</div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
